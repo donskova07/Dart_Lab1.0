@@ -86,4 +86,43 @@ List<String> upper = names.map((name) => name.toUpperCase()).toList();
 print(upper);
 List<String> longNames = names.where ((name) => name.length > 4).toList();
 print(longNames); 
+
+
+int score2 = 85;
+String grade;
+if (score >= 90) {
+  grade = 'A';
+} else if (score2 >= 75){
+  grade = 'B';
+} else {
+  grade = 'C';
+}
+print(grade);
+String result = score >= 60 ? 'сдал' : 'не сдал';
+print(result);
+
+for (int i = 0; i < 5; i++) {
+  print(i);
+}
+List<String> fruits3 = ['apple', 'banana', 'pear'];
+for (var fruit in fruits3) {
+  print(fruit);
+}
+int n = 0;
+while (n < 3){
+  print(n);
+  n++;
+}
+String day = 'pn';
+switch (day) {
+  case 'sb':
+  case 'vs':
+    print('holiday');
+    break;
+  case 'pn':
+    print('beggining of week');
+    break;
+  default:
+    print('working day');
+}
 }
